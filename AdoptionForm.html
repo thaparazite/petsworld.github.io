@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Form</title>
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Indie+Flower&family=Public+Sans&family=Young+Serif&display=swap" rel="stylesheet">
+    <!--link to the style sheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body_RegistrationForm_page">
+    <!--Page Header-->
+    <header id="header_index_page">
+        <div id="div_header">
+            <div id="div_logo"><a href="index.html"><img id="logo" src="Pictures/Logo/logo.png" alt="logo"></a></div>
+            <div id="div_h1"><h1 id="h1_index_page">Pet's World</h1></div>
+            <!--Icons-->
+            <div id="div_icons">
+                <span>|</span>
+                <a id="pet" href="AvailablePets.html"><b>Available Pets</b></a>
+                <span>|</span>
+                <!--the link will bring you to thhe index page then directed to the H4 Get in Touch, 
+                    because I've added the #idName after teh link-->
+                <a id="contact" href="index.html #get_in_touch"><b>Contact</b></a>
+                <span>|</span>
+                <!--The links directs you to the main social media pages because I didn't create any social media accounts-->
+                <span id="facebook"><a href="https://www.facebook.com"><img class="icons" src="Pictures/Icons/facebook.png" alt="facebook"></a></span>
+                <span id="instagram"><a href="https://www.instagram.com"><img class="icons" src="Pictures/Icons/instagram.png" alt="instagram"></a></span>
+                <span id="twitter"><a href="https://www.twitter.com"> <img class="icons" src="Pictures/Icons/twitter.png" alt="twitter"></a></span>      
+            </div>
+        </div>
+    </header>      
+    <br>
+    <h2 id="h2_index_page">Adopt a friendly companion</h2>
+    <br>
+    <div>
+    <form id="form" action="" name="pet adoption form">
+        <h3 id="h3_RegistrationForm_page">Pet Adoption Form</h3>
+        <br>
+        <!--the for attribute is for when we click the Name literal the input wich is referenced 
+            will be automaticaly selected -->
+        <label id="name_label" for="name">Name:</label>
+        <!--required means the field must NOTs be left empty-->
+        <input id="name" type="text" minlength="3" maxlength="20" placeholder="name" required/>
+        <br>
+        <label id="address_label" for="address">Address:</label>
+        <input id="address" type="text" placeholder="address" required/>
+        <br>
+        <label id="phone_number_label" for="phone_number">Phone Number:</label>
+        <!-- 
+            -the pattern allow us to input 10 digit phone number including area code, ex: ###-###-####
+            -because the task is asking me to have a maximum of 10 digit input I will remove the dashes "-" from the pattern  
+            -I could also add spaces instead of dashes for more clear reading of the phone number-->
+        <input id="phone_number" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone_input" maxlength="10" minlength="10" placeholder="phone number" required/>
+        <br>
+        <label id="email_label" for="email">Email:</label>
+        <!--
+            -placeholder is a temporary text displayed in the box, when the box is clicked to type in the email the text dissapears
+            -the pattern breakdown: 
+              -  .+ allow us to input one or more characters of any type before @
+              -  @  
+              -  .+ allow us to input one or more characters of any type after @
+              -  \. matches the .
+              -  ([a-z]+) represents one or more alphabetic characters after the .
+        -->
+        <input id="email" type="email" pattern=".+@.+\.([a-z]+)" placeholder="email" name="email_input"/>
+        <br>
+        <br>
+        <label id="contact_preference_label" for="contact_preference">Contact Preference: </label>
+        <label id="phone_label" for="phone">Phone</label>
+        <input type="radio" id="phone" name="phone_radio_selector"/>
+        <label id="email2_label" for="email2">Email</label>
+        <input type="radio" id="email2" name="email_radio_selector"/>
+        <br>
+        <br>
+        <!--
+            -the for attribute from the label must match the id attribute. 
+            -if it matches then when the Desired Pets is clicked it will automatically select the option box.
+        -->
+        <label id="desired_pet_label" for="desired_pet">Desired Pet:</label>
+        <select id="desired_pet" name="pets">
+            <option value="Tigr">Tigr</option>
+            <option value="Fluffy">Fluffy</option>
+            <option value="Micky">Micky</option>
+            <option value="Ringo">Ringo</option>
+        </select>
+        <br>
+        <br>
+        <label id="comments_label" for="aditional_comments"><b>Additional Comments</b></label>
+        <br>
+        <textarea id="aditional_comments" name="comments" cols="30" rows="10" placeholder="Aditional comments..."></textarea>
+        <br>
+        <br>
+        <p>
+            <input id="terms_conditions" type="checkbox" name="tc" required/>
+            <b>Terms And Conditions</b>
+        </p>
+        <p>
+            <input id="newsletter" type="checkbox" name="tc"/>
+            <b>Subscribe to Monthly Newsletter</b>
+        </p>
+        <br>
+        <button id="paw_button" type="submit"><img id="paw" src="Pictures/Logo/paw.png" alt="paw"></button>
+    </form>
+    </div>
+    <br>
+    <footer>
+        <p id="footer_paragraph">All rights reserved ©<b id="b_footer">XMLVC</b></p>
+    </footer>
+</body>
+
+</html>

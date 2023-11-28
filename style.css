@@ -1,0 +1,240 @@
+
+/* index page styling*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("Pictures/Wallpaper/background.jpg");
+    text-align: center;
+}
+#header_index_page {
+    background-color: rgb(34, 110, 137);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative; /* Added for positioning of icons */ 
+    display: flex;
+    justify-content: space-between;   
+}
+#div_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#div_h1 {
+    left: 45%;
+    position: fixed;
+    padding: 2px;
+}
+#logo {
+    width: 30px;
+    margin-left: 10px;
+}
+#pet{
+    text-decoration: none;
+    color: #000000;
+}
+#pet:hover{
+    color: #00ff33;
+}
+#adoption_form{
+    text-decoration: none;
+    color: #000000;
+}
+#adoption_form:hover{
+    color: #00ff33;
+}
+#contact{
+    text-decoration: none;
+    color: #000000;
+}
+#contact:hover{
+    color: #00ff33;
+}
+#h1_index_page {
+    color: rgb(0, 0, 0);
+    margin: 0; /* Remove default margin */
+}
+#h2_index_page {
+    color: black;
+    margin: 0; /* Remove default margin */
+    font-family: 'Indie Flower', cursive;
+}
+#h3_index_page{
+    font-family: 'DM Serif',cursive;
+}
+#pets_wallpaper {
+    display: block;
+    margin:  auto;
+    border: 1px solid #495360;
+    border-radius: 10px;
+}
+#div_icons {
+    position: absolute; /* Position the icons absolutely */
+    /*Set the icons to bottom right*/
+    right: 5px;
+    bottom: 0;
+    align-items: center; /* Vertically center the icons */
+    padding: 2px;
+}
+.icons {
+    margin-left: 4px; /* Add spacing between the icons */
+    text-decoration: none; /* Remove underline on the anchor */
+    width: 15px; /* Adjust the font size as needed */
+}
+#list{
+    text-align: left;
+    top: 70%;
+}
+#div_list{
+    position: absolute;
+    bottom: 27%;
+}
+#dogtrust{
+    text-decoration: none; /* Remove underline on the anchor */
+    color: rgb(32, 51, 73);
+}
+#contacts{
+    left: 40%;
+    right: 40%;
+    top: 72%;
+    position:fixed;
+}
+.table_index_page{
+    border:  1px solid #07c12c;
+    box-shadow: #12ba33 0px 0px 5px;
+    border-radius: 5px;
+    padding: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+}
+footer{
+    left: 40%;
+    right: 40%;
+    top: 95%;
+    position:fixed;
+}
+#footer_paragraph{
+    border: #07c12c solid 1px;
+    /*This will give the paragraph a blur shadow*/
+    text-shadow: #00ff33 1px 1px 10px;
+    border-radius: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+#get_in_touch{
+    font-size:20px;
+    line-height: 0px;/*Remove the space from the header*/
+    font-family: 'Young Serif',cursive;
+}
+
+/*AvailablePets page styling*/
+#h3_AvailablePets_page{
+    font-size: 30px;
+    margin: 0;
+    font-family: 'DM Serif',cursive;
+}
+#collection{
+    display:flex;
+    border: #000000 solid 1px;
+    display: flex;
+    justify-content:space-around;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#cat{
+    border: #000000 solid 1px;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+    
+}
+#cat:hover{
+    box-shadow: #00ff33 0px 0px 10px;
+}
+#dog{
+    border: #000000 solid 1px;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+}
+#dog:hover{
+    box-shadow: #00ff33 0px 0px 10px;
+}
+#guinea{
+    border: #000000 solid 1px;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+}
+#guinea:hover{
+    box-shadow: #00ff33 0px 0px 10px;
+}
+#parrot{
+    border: #000000 solid 1px;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+}
+#parrot:hover{
+    box-shadow: #00ff33 0px 0px 10px;
+}
+
+/*RegisrtationForm page styling*/
+#form{
+    border: #000000 solid 1px;
+    width: 20%;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+#h3_RegistrationForm_page{
+    margin: 0;
+    text-shadow: #00ff33 0px 0px 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    width: 120px;
+    display: inline-flex;
+    padding: 2px;
+}
+#contact_preference_label{
+    display: inline;
+}
+#phone_label{
+    display: inline;
+}
+#phone{
+    display: inline;
+}
+#email2_label{
+    display: inline;
+}
+#email2{
+    display: inline;
+}
+#phone_label{
+    display: inline;
+}
+#desired_pet{
+    width: 70px;
+}
+#comments_label{
+    display: inline;
+}
+#paw{
+    width: 50px;
+    border-radius: 100%;
+    
+}
+#paw_button{
+    padding: 5px;
+    border-radius: 100%;
+    background-color: #24aa3f;
+    border-color: goldenrod;
+}
+p{
+    margin: 0px;
+}
